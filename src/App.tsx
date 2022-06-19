@@ -1,9 +1,12 @@
 import "./App.css";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
-      <h1>Recipes App</h1>
+      <Layout>
+        <section>Recipes App</section>
+      </Layout>
     </div>
   );
 }
