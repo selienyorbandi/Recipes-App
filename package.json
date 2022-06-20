@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --open",
+    "dev": "vite --host && open-browser",
+    "open-browser": "start http://localhost:3000/",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix . --ext .ts,.tsx",
@@ -11,7 +12,8 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
