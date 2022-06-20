@@ -1,0 +1,27 @@
+:root {
+    --lightBg: #EEEEEE;
+    --mainColor: #FF4067;
+    --mainLightFont: #1C1C1C;
+    --tabBarBg: #EFEFEF;
+    --tabBarFont: #484848;
+
+    --darkBg: #1C1C1C;
+    --darkAltBg: #2A2A2A;
+    --mainDarkFont: #EEEEEE;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import Header from "./Header/Header";
 import styles from "./Layout.module.css";
-import Navbar from "./Navbar/Navbar";
+import TabBar from "./TabBar/TabBar";
 
 type Props = {
     children: ReactElement | ReactElement[]
@@ -13,7 +13,7 @@ function Layout({children}: Props) {
     <main>
       {children}
     </main>
-    <Navbar/>
+    <TabBar/>
   </div>;
 }
 
