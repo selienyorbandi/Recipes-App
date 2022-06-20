@@ -1,0 +1,42 @@
+.SideBar {
+    display: none;
+}
+
+@media screen and (min-width:1000px) {
+    .SideBar {
+        width: 180px;
+        height: 100%;
+        position: absolute;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: var(--mainColor);
+    }
+
+    .SideBar img {
+        width: 140px;
+    }
+
+    .SideBar a {
+        color: var(--pureWhite);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .SideBar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .SideBar hr {
+        border-color: var(--pureWhite);
+        border-style: solid;
+    }
+
+    .SideBar li:hover {
+        color: var(--sideBarHoverFont);
+    }
+
+}
