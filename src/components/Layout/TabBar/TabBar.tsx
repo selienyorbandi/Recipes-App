@@ -17,7 +17,7 @@ function TabBar() {
             <img src={homeIco}/>
           </li>
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/s/">
           <li>
             <p>Search</p>
             <img src={searchIco}/>

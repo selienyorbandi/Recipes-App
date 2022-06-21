@@ -12,7 +12,7 @@ function SideBar() {
         <NavLink to="/">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/s/">
           <li>Search</li>
         </NavLink>
         <NavLink to="/categories">
