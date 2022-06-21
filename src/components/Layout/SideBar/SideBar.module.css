@@ -15,6 +15,10 @@
         background: var(--mainColor);
     }
 
+    .SideBar li {
+        color: var(--pureWhite);
+    }
+    
     .SideBar img {
         width: 140px;
     }

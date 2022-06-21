@@ -46,3 +46,10 @@
     background: var(--mainColor);
     border: solid 4px rgba(138, 138, 138, 0.424);
 }
+
+
+@media screen and (min-width: 900px) {
+    .Searchbar input {
+        width: calc(400px + 5vw);
+    }
+}
