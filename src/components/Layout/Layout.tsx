@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import Header from "./Header/Header";
 import styles from "./Layout.module.css";
 import SideBar from "./SideBar/SideBar";
 import TabBar from "./TabBar/TabBar";
@@ -12,11 +11,7 @@ function Layout({ children }: Props) {
   return (
     <div className={styles.Layout}>
       <SideBar />
-      <div>
-        <Header />
-
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <TabBar />
     </div>
   );

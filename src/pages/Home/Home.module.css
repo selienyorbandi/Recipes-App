@@ -1,0 +1,41 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(.1rem + 3vh);
+}
+
+.Home img {
+    width: calc(210px + 11vh);
+}
+
+.Home__slogan {
+    font-size: calc(1.5rem + 1vw);
+}
+
+.Attribution {
+    padding: 1.25rem 0;
+    text-align: center;
+    font-size: calc(.5rem + 2vw);
+    line-height: calc(1rem + 1vw);
+}
+
+@media screen and (min-width: 900px) {
+    .Home {
+        margin-left: calc(180px + 3vw);
+    }
+
+    .Home img {
+        width: calc(250px + 6vw);
+    }
+
+    .Home p {
+        font-size: 1.2rem;
+    }
+
+    .Home .Home__slogan {
+        font-size: 1.8rem;
+    }
+
+}
