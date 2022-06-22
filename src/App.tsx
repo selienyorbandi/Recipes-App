@@ -4,7 +4,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Search from "./pages/Search/Search";
 
-function App() {
+function App() : JSX.Element {
   return (
     <Layout>
       <Routes>

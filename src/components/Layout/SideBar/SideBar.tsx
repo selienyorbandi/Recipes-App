@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../../assets/recipes-app-logo-white.png";
 import styles from "./SideBar.module.css";
 
-function SideBar() {
+function SideBar() : JSX.Element {
   return (
     <nav className={styles.SideBar}>
       <img src={logo} />
@@ -12,7 +12,7 @@ function SideBar() {
         <NavLink to="/">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/s/">
+        <NavLink to="/">
           <li>Search</li>
         </NavLink>
         <NavLink to="/categories">

@@ -2,7 +2,7 @@ import logo from "../../assets/recipes-app-logo.png";
 import SearchBar from "../../components/Searchbar/SearchBar";
 import styles from "./Home.module.css";
 
-function Home() {
+function Home() : JSX.Element {
   return (
     <section className={styles.Home}>
       <div className={styles.Home__content}>

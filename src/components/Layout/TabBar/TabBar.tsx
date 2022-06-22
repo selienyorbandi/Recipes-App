@@ -7,7 +7,7 @@ import savedIco from "../../../assets/save-ico.svg";
 
 import styles from "./TabBar.module.css";
 
-function TabBar() {
+function TabBar() : JSX.Element {
   return (
     <nav className={styles.TabBar}>
       <ul>
@@ -17,7 +17,7 @@ function TabBar() {
             <img src={homeIco}/>
           </li>
         </NavLink>
-        <NavLink to="/s/">
+        <NavLink to="/">
           <li>
             <p>Search</p>
             <img src={searchIco}/>
