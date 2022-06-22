@@ -1,6 +1,6 @@
 .CategoryItem {
-    background: #F0F0F0;
-    border: solid 1px #FF4067;
+    background: var(--tabBarBg);
+    border: solid 1px var(--mainColor);
     border-radius: 5px;
     cursor: pointer;
     width: 290px;
@@ -28,8 +28,8 @@
 }
 
 .CategoryItem h2 {
-    background: #FF4067;
-    color: #fff;
+    background: var(--mainColor);
+    color: var(--pureWhite);
     text-align: center;
     padding: .5rem;
 }

@@ -6,11 +6,12 @@ import SearchBar from "../../components/Searchbar/SearchBar";
 import { searchByName } from "../../api/endpoints";
 
 import styles from "./Search.module.css";
+import Spinner from "../../components/Spinner/Spinner";
 
-function Search() : JSX.Element {
+function Search(): JSX.Element {
   const searchParams = useParams<string>().searchParams;
   const [recipes, setRecipes] = useState([]);
-  
+
   useEffect(() => {
     fetch(`${searchByName}${searchParams}`)
       .then(response => response.json())
@@ -19,9 +20,17 @@ function Search() : JSX.Element {
 
   return (
     <section className={styles.Search}>
-      <SearchBar/>
-      <h1>{`${searchParams?.charAt(0).toUpperCase() || ""}${searchParams?.slice(1,searchParams.length) || ""} `}</h1>
-      <RecipesList recipeList={recipes || []}/>
+      <SearchBar />
+      {recipes.length ? (
+        <>
+          <h1>{`${searchParams?.charAt(0).toUpperCase() || ""}${
+            searchParams?.slice(1, searchParams.length) || ""
+          } `}</h1>
+          <RecipesList recipeList={recipes || []} />
+        </>
+      ) : (
+        <Spinner />
+      )}
     </section>
   );
 }
