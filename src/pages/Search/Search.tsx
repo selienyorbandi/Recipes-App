@@ -21,16 +21,17 @@ function Search(): JSX.Element {
   return (
     <section className={styles.Search}>
       <SearchBar />
-      {recipes.length ? (
-        <>
-          <h1>{`${searchParams?.charAt(0).toUpperCase() || ""}${
-            searchParams?.slice(1, searchParams.length) || ""
-          } `}</h1>
-          <RecipesList recipeList={recipes || []} />
-        </>
-      ) : (
-        <Spinner />
-      )}
+      {recipes != null ?
+        recipes.length ? (
+          <>
+            <h1>{`${searchParams?.charAt(0).toUpperCase() || ""}${
+              searchParams?.slice(1, searchParams.length) || ""
+            } `}</h1>
+            <RecipesList recipeList={recipes || []} />
+          </>
+        ) : (
+          <Spinner />
+        ) : <h1>Not found</h1>}
     </section>
   );
 }
