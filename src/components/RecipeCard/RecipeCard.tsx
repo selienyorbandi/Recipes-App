@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./RecipeCard.module.css";
 
 interface recipeCardProp {
@@ -8,12 +9,15 @@ interface recipeCardProp {
 
 function RecipeCard({name, thumb, id} : recipeCardProp) : JSX.Element {
   return (
-    <div key={id} className={styles.RecipeCard}>
-      <div className={styles.RecipeCard__img}>
-        <img src={thumb} alt={name} />
+    <Link to={`/r/${id}`}>
+      <div key={id} className={styles.RecipeCard}>
+        <div className={styles.RecipeCard__img}>
+          <img src={thumb} alt={name} />
+        </div>
+        <h2>{name}</h2>
       </div>
-      <h2>{name}</h2>
-    </div>
+    </Link>
+    
   );
 }
 
