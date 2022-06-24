@@ -1,0 +1,18 @@
+.Filtered {
+    display: flex;
+    flex-direction: column;
+}
+
+.Filtered h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+    .Filtered {
+        padding: 3rem;
+        margin-left: calc(200px + 3vw);
+    }
+
+}

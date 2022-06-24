@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { recipeById } from "../../api/endpoints";
 import Spinner from "../../components/Spinner/Spinner";
 
@@ -71,7 +71,7 @@ function ingredientsToArray(recipe: recipe) {
   return ingArr;
 }
 
-function Recipe() {
+function Recipe(): JSX.Element {
   const { id } = useParams();
   const [recipe, setRecipe] = useState({} as recipe);
 
@@ -94,8 +94,12 @@ function Recipe() {
             <div className={styles.Recipe__content}>
               <h1 className={styles.Recipe__Title}>{recipe.strMeal}</h1>
               <div className={styles.Recipe__badges}>
-                <p>{recipe.strCategory}</p>
-                <p>{recipe.strArea}</p>
+                <Link to={`/c/${recipe.strCategory}`}>
+                  <p>{recipe.strCategory}</p>
+                </Link>
+                <Link to={`/a/${recipe.strArea}`}>
+                  <p>{recipe.strArea}</p>
+                </Link>
               </div>
               <h2>Instructions</h2>
               <p className={styles.Recipe__Instructions}>

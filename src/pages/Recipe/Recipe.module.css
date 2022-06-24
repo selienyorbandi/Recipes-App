@@ -44,22 +44,22 @@
     cursor: pointer;
 }
 
-.Recipe__badges p:first-child {
+.Recipe__badges a:first-child p:first-child {
     border: solid 1px var(--mainColor);
     color: var(--mainColor);
 }
 
-.Recipe__badges p:first-child:hover {
+.Recipe__badges a:first-child p:first-child:hover {
     background: var(--mainColor);
     color: var(--pureWhite);
 }
 
-.Recipe__badges p:last-child {
+.Recipe__badges a p:last-child {
     border: solid 1px var(--altColor);
     color: var(--altColor);
 }
 
-.Recipe__badges p:last-child:hover {
+.Recipe__badges a p:last-child:hover {
     background: var(--altColor);
     color: var(--pureWhite);
 }

@@ -24,9 +24,7 @@ function Search(): JSX.Element {
       {recipes != null ?
         recipes.length ? (
           <>
-            <h1>{`${searchParams?.charAt(0).toUpperCase() || ""}${
-              searchParams?.slice(1, searchParams.length) || ""
-            } `}</h1>
+            <h1>{searchParams?.toUpperCase()}</h1>
             <RecipesList recipeList={recipes || []} />
           </>
         ) : (
