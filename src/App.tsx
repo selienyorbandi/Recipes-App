@@ -1,25 +1,32 @@
 import { Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
+import { SavedContextProvider } from "./context/savedContext";
+
 import Categories from "./pages/Categories/Categories";
 import Filtered from "./pages/Filtered/Filtered";
 import Home from "./pages/Home/Home";
 import Recipe from "./pages/Recipe/Recipe";
 import Search from "./pages/Search/Search";
 
-import "./App.css";
+import Layout from "./components/Layout/Layout";
 
-function App() : JSX.Element {
+import "./App.css";
+import Saved from "./pages/Saved/Saved";
+
+function App(): JSX.Element {
   return (
     <Layout>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/s/*" element={<Search/>}/>
-        <Route path="/s/:searchParams" element={<Search/>}/>
-        <Route path="/categories" element={<Categories/>} />
-        <Route path="/c/:params" element={<Filtered/>} />
-        <Route path="/a/:params" element={<Filtered/>} />
-        <Route path="/r/:id" element={<Recipe/>} />
-      </Routes>
+      <SavedContextProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/s/*" element={<Search />} />
+          <Route path="/s/:searchParams" element={<Search />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/c/:params" element={<Filtered />} />
+          <Route path="/a/:params" element={<Filtered />} />
+          <Route path="/r/:id" element={<Recipe />} />
+          <Route path="/saved" element={<Saved />} />
+        </Routes>
+      </SavedContextProvider>
     </Layout>
   );
 }

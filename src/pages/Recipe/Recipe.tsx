@@ -102,13 +102,11 @@ function Recipe(): JSX.Element {
                 </Link>
               </div>
               <h2>Instructions</h2>
-              <p className={styles.Recipe__Instructions}>
-                {recipe.strInstructions}
-              </p>
+              <p className={styles.Recipe__Instructions}>{recipe.strInstructions}</p>
               <h2>Ingredients</h2>
               <ul className={styles.Recipe__Ingredients}>
                 {ingredientsToArray(recipe).map((ing, ind) => (
-                  <li key={ind}>{ing}</li>
+                  <li key={ind}>{ing.toLowerCase()}</li>
                 ))}
               </ul>
             </div>

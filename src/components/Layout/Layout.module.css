@@ -1,16 +1,16 @@
 .Layout main {
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
-    .Layout main {
-        padding-bottom: 0;
-    }
+  .Layout main {
+    padding-bottom: 0;
+  }
 }

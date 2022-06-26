@@ -1,36 +1,35 @@
 :root {
-    --lightBg: #EEEEEE;
-    --mainColor: #FF4067;
-    --altColor: #FF8320;
-    --mainLightFont: #1C1C1C;
-    --tabBarBg: #EFEFEF;
-    --tabBarFont: #484848;
+  --lightBg: #eeeeee;
+  --mainColor: #ff4067;
+  --altColor: #ff8320;
+  --mainLightFont: #1c1c1c;
+  --tabBarBg: #efefef;
+  --tabBarFont: #484848;
 
-    --darkBg: #1C1C1C;
-    --darkAltBg: #2A2A2A;
-    --mainDarkFont: #EEEEEE;
+  --darkBg: #1c1c1c;
+  --darkAltBg: #2a2a2a;
+  --mainDarkFont: #eeeeee;
 
-    --pureWhite: #fff;
-    --sideBarHoverFont: #DCFD90;
-
+  --pureWhite: #fff;
+  --sideBarHoverFont: #dcfd90;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: var(--mainLightFont);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--mainLightFont);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    background: var(--lightBg);
+  background: var(--lightBg);
 }

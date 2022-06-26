@@ -21,7 +21,7 @@ function Search(): JSX.Element {
   return (
     <section className={styles.Search}>
       <SearchBar />
-      {recipes != null ?
+      {recipes != null ? (
         recipes.length ? (
           <>
             <h1>{searchParams?.toUpperCase()}</h1>
@@ -29,7 +29,10 @@ function Search(): JSX.Element {
           </>
         ) : (
           <Spinner />
-        ) : <h1>Not found</h1>}
+        )
+      ) : (
+        <h1>Not found</h1>
+      )}
     </section>
   );
 }

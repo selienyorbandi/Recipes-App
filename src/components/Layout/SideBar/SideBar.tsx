@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../../assets/recipes-app-logo-white.png";
 import styles from "./SideBar.module.css";
 
-function SideBar() : JSX.Element {
+function SideBar(): JSX.Element {
   return (
     <nav className={styles.SideBar}>
       <img src={logo} />

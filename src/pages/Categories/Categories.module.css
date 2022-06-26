@@ -1,18 +1,18 @@
 .Categories {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Categories h1 {
-    padding: 1.5rem;
-    font-size: 2.5rem;
+  padding: 1.5rem;
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 900px) {
-    .Categories {
-        padding: 3rem;
-        margin-left: calc(180px + 3vw);
-    }
+  .Categories {
+    padding: 3rem;
+    margin-left: calc(180px + 3vw);
+  }
 }

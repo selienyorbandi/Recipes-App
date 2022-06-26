@@ -7,7 +7,7 @@ type Props = {
   children: ReactElement | ReactElement[];
 };
 
-function Layout({ children }: Props) : JSX.Element {
+function Layout({ children }: Props): JSX.Element {
   return (
     <div className={styles.Layout}>
       <SideBar />

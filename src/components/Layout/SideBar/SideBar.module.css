@@ -1,47 +1,46 @@
 .SideBar {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width:900px) {
-    .SideBar {
-        width: calc(200px + 3vw);
-        height: 100%;
-        position: fixed;
-        left: 0;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        background: var(--mainColor);
-    }
+@media screen and (min-width: 900px) {
+  .SideBar {
+    width: calc(200px + 3vw);
+    height: 100%;
+    position: fixed;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--mainColor);
+  }
 
-    .SideBar li {
-        color: var(--pureWhite);
-    }
-    
-    .SideBar img {
-        width: 140px;
-    }
+  .SideBar li {
+    color: var(--pureWhite);
+  }
 
-    .SideBar a {
-        color: var(--pureWhite);
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
+  .SideBar img {
+    width: 140px;
+  }
 
-    .SideBar ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .SideBar a {
+    color: var(--pureWhite);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 
-    .SideBar hr {
-        border-color: var(--pureWhite);
-        border-style: solid;
-    }
+  .SideBar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-    .SideBar li:hover {
-        color: var(--sideBarHoverFont);
-    }
+  .SideBar hr {
+    border-color: var(--pureWhite);
+    border-style: solid;
+  }
 
+  .SideBar li:hover {
+    color: var(--sideBarHoverFont);
+  }
 }

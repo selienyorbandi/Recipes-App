@@ -6,7 +6,7 @@ import RecipesList from "../../components/RecipesList/RecipesList";
 import Spinner from "../../components/Spinner/Spinner";
 import styles from "./Filtered.module.css";
 
-function Filtered() : JSX.Element {
+function Filtered(): JSX.Element {
   const { params } = useParams();
   const [recipes, setRecipes] = useState([]);
 
@@ -21,13 +21,13 @@ function Filtered() : JSX.Element {
       .then(result => setRecipes(result.meals));
   }, []);
 
-  return (
-    recipes.length ?
-      <div className={styles.Filtered}>
-        <h1>{params?.toUpperCase()}</h1>
-        <RecipesList recipeList={recipes} />
-      </div>
-      : <Spinner/>
+  return recipes.length ? (
+    <div className={styles.Filtered}>
+      <h1>{params?.toUpperCase()}</h1>
+      <RecipesList recipeList={recipes} />
+    </div>
+  ) : (
+    <Spinner />
   );
 }
 

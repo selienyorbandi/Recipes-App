@@ -1,44 +1,43 @@
 .TabBar {
-    background: var(--tabBarBg);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
+  background: var(--tabBarBg);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -1px -3px 4px 0px rgba(0, 0, 0, 0.19);
 }
 
 .TabBar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 }
 
 .TabBar a {
-    color: var(--tabBarFont);
+  color: var(--tabBarFont);
 }
 
 .TabBar li {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: .25rem;
-
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .TabBar p {
-    font-size: .85rem;
-    font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .TabBar img {
-    width: 23px;
+  width: 23px;
 }
 
 @media screen and (min-width: 900px) {
-    .TabBar {
-        display: none;
-    }
+  .TabBar {
+    display: none;
+  }
 }

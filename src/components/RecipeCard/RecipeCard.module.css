@@ -1,71 +1,76 @@
 .RecipeCard {
-    background: #f0f0f0;
-    width: 300px;
-    height: 330px;
-    border: solid 1px rgba(128, 128, 128, 0.349);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    overflow: hidden;
-    position: relative;
+  background: #f0f0f0;
+  width: 300px;
+  height: 330px;
+  border: solid 1px rgba(128, 128, 128, 0.349);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .RecipeCard__img {
-    width: 300px;
-    height: 250px;
+  width: 300px;
+  height: 250px;
 }
 
 .RecipeCard__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .RecipeCard h2 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: center;
-    padding: .2rem .5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
 }
 
 .RecipeCard:hover {
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
 }
 
-
 .RecipeCard__notSaved {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    background: #EFEFEF;
-    border-bottom-left-radius: 5px;
-    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
-    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
-    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--tabBarBg);
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.42);
+  cursor: pointer;
+}
+
+.RecipeCard__notSaved:hover {
+  background: var(--mainColor);
 }
 
 .RecipeCard__isSaved {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    background: #FF4067;
-    border-bottom-left-radius: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--mainColor);
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
 }
 
 .RecipeCard__isSaved img {
-    filter: brightness(6);
+  filter: brightness(6);
 }

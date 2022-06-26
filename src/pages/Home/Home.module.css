@@ -1,52 +1,51 @@
 .Home__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: calc(.1rem + 3vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(0.1rem + 3vh);
 }
 
 .Home img {
-    width: calc(150px + 11vh);
+  width: calc(150px + 11vh);
 }
 
 .Home__slogan {
-    font-size: calc(1.1rem + 1vw);
+  font-size: calc(1.1rem + 1vw);
 }
 
 .Attribution {
-    padding: 1.25rem 0;
-    text-align: center;
+  padding: 1.25rem 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {
-    .Home img {
-        width: calc(250px + 12vw);
-    }
-    .Attribution {
-        padding: 3rem 0;
-    }
+  .Home img {
+    width: calc(250px + 12vw);
+  }
+  .Attribution {
+    padding: 3rem 0;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    .Home {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 4rem 0 2rem 0;
-        margin-left: calc(180px + 3vw);
-    }
+  .Home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0 2rem 0;
+    margin-left: calc(180px + 3vw);
+  }
 
-    .Home img {
-        width: calc(250px + 6vw);
-    }
+  .Home img {
+    width: calc(250px + 6vw);
+  }
 
-    .Home p {
-        font-size: 1.2rem;
-    }
+  .Home p {
+    font-size: 1.2rem;
+  }
 
-    .Home .Home__slogan {
-        font-size: 1.8rem;
-    }
-
+  .Home .Home__slogan {
+    font-size: 1.8rem;
+  }
 }

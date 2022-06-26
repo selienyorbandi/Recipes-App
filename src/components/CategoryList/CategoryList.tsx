@@ -7,7 +7,7 @@ interface catgListProp {
   strCategoryThumb: string;
 }
 
-function CategoryList({ list } : {list : catgListProp[] }) {
+function CategoryList({ list }: { list: catgListProp[] }) {
   return (
     <div className={styles.CategoryList}>
       {list.map(item => (
