@@ -7,6 +7,7 @@ import { searchByName } from "../../api/endpoints";
 
 import styles from "./Search.module.css";
 import Spinner from "../../components/Spinner/Spinner";
+import GoBack from "../../components/GoBack/GoBack";
 
 function Search(): JSX.Element {
   const searchParams = useParams<string>().searchParams;
@@ -20,6 +21,7 @@ function Search(): JSX.Element {
 
   return (
     <section className={styles.Search}>
+      <GoBack />
       <SearchBar />
       {recipes != null ? (
         recipes.length ? (

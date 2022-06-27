@@ -19,7 +19,7 @@ const savedFromLocalStorage = () => {
   return JSON.parse(window.localStorage.getItem("savedRecipes") || "[]");
 };
 
-const saveToLocalStorage = (content : Recipe[]) => {
+const saveToLocalStorage = (content: Recipe[]) => {
   window.localStorage.setItem("savedRecipes", JSON.stringify(content || "[]"));
 };
 

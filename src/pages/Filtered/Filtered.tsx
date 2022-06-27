@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { filterByCategory, filterByArea } from "../../api/endpoints";
+import GoBack from "../../components/GoBack/GoBack";
 
 import RecipesList from "../../components/RecipesList/RecipesList";
 import Spinner from "../../components/Spinner/Spinner";
@@ -23,6 +24,7 @@ function Filtered(): JSX.Element {
 
   return recipes.length ? (
     <div className={styles.Filtered}>
+      <GoBack />
       <h1>{params?.toUpperCase()}</h1>
       <RecipesList recipeList={recipes} />
     </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { categoryList } from "../../api/endpoints";
 import CategoryList from "../../components/CategoryList/CategoryList";
+import GoBack from "../../components/GoBack/GoBack";
 import Spinner from "../../components/Spinner/Spinner";
 
 import styles from "./Categories.module.css";
@@ -16,7 +17,8 @@ function Categories(): JSX.Element {
 
   return (
     <div className={styles.Categories}>
-      <h1>Categories</h1>
+      <GoBack />
+      <h1>CATEGORIES</h1>
       {categories.length ? <CategoryList list={categories} /> : <Spinner />}
     </div>
   );

@@ -1,0 +1,14 @@
+.GoBack {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 1rem;
+}
+
+.GoBack p {
+  font-size: 1.1rem;
+  color: #484848;
+}

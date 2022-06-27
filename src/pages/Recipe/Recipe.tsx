@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { recipeById } from "../../api/endpoints";
+import GoBack from "../../components/GoBack/GoBack";
 import Spinner from "../../components/Spinner/Spinner";
 
 import styles from "./Recipe.module.css";
@@ -83,16 +84,21 @@ function Recipe(): JSX.Element {
 
   return (
     <>
+      <div className={styles.Goback}>
+        <GoBack />
+      </div>
       <div className={styles.Recipe}>
         {JSON.stringify(recipe) != "{}" ? (
           <>
-            <div className={styles.Recipe__Main}>
+            <div>
               <div className={styles.Recipe__img}>
                 <img src={recipe.strMealThumb} />
               </div>
             </div>
             <div className={styles.Recipe__content}>
-              <h1 className={styles.Recipe__Title}>{recipe.strMeal}</h1>
+              <div className={styles.Recipe__TitleHeader}>
+                <h1 className={styles.Recipe__Title}>{recipe.strMeal}</h1>
+              </div>
               <div className={styles.Recipe__badges}>
                 <Link to={`/c/${recipe.strCategory}`}>
                   <p>{recipe.strCategory}</p>

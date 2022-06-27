@@ -4,19 +4,20 @@ import styles from "./Saved.module.css";
 
 function Saved(): JSX.Element {
   const { savedRecipes } = useSavedContext();
-  
+
   return (
-    <div className={styles.Saved}>
-      <h1>SAVED</h1>
-      {
-        savedRecipes.length ? 
+    <>
+      <div className={styles.Saved}>
+        <h1>SAVED</h1>
+        {savedRecipes.length ? (
           <RecipesList recipeList={savedRecipes} />
-          : <>
+        ) : (
+          <>
             <p>Nothing here</p>
-            
           </>
-      }
-    </div>
+        )}
+      </div>
+    </>
   );
 }
 
