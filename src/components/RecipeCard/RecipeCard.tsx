@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import saveIco from "../../assets/save-ico.svg";
 import { useSavedContext } from "../../context/savedContext";
+import { truncateString } from "../../utils/truncateString";
 import styles from "./RecipeCard.module.css";
 
 interface recipeCardProp {
@@ -36,7 +37,7 @@ function RecipeCard({ name, thumb, id }: recipeCardProp): JSX.Element {
         <div className={styles.RecipeCard__img}>
           <img src={thumb} alt={name} />
         </div>
-        <h2>{name}</h2>
+        <h2>{truncateString(name, 45)}</h2>
       </Link>
     </div>
   );
