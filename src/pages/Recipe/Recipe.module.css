@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 100px 2rem;
 }
 
 .Recipe__img {
