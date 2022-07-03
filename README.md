@@ -1,5 +1,7 @@
 # Recipes-App
 
+![Recipes App Logo](https://raw.githubusercontent.com/selienyorbandi/Recipes-App/main/src/assets/recipes-app-logo.png)  
+
 Recipes app is a responsive web application that allows you to search for recipes using the search engine or filtering them by categories and also save those you want in a special section to access whenever you want.
 
 It was developed in React 18 with Typescript. It consumes an api and allows you to save the desired recipes through localstorage.  
