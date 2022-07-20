@@ -43,4 +43,9 @@
   .SideBar li:hover {
     color: var(--sideBarHoverFont);
   }
+
+  .SideBar__Link__Active li{
+    color: var(--sideBarHoverFont);
+  }
+
 }

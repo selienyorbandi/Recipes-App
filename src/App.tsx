@@ -21,10 +21,11 @@ function App(): JSX.Element {
         <Suspense fallback={<Spinner />}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/s" element={<Home />} />
             <Route path="/s/*" element={<Search />} />
             <Route path="/s/:searchParams" element={<Search />} />
             <Route path="/categories" element={<Categories />} />
-            <Route path="/c/:params" element={<Filtered />} />
+            <Route path="/categories/:params" element={<Filtered />} />
             <Route path="/a/:params" element={<Filtered />} />
             <Route path="/r/:id" element={<Recipe />} />
             <Route path="/saved" element={<Saved />} />

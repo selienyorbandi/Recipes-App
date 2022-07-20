@@ -9,16 +9,16 @@ function SideBar(): JSX.Element {
       <img src={logo} />
       <hr />
       <ul>
-        <NavLink to="/">
+        <NavLink to="/" className={({isActive}) => isActive ? styles.SideBar__Link__Active : undefined}>
           <li>Home</li>
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/s" className={({isActive}) => isActive ? styles.SideBar__Link__Active : undefined}>
           <li>Search</li>
         </NavLink>
-        <NavLink to="/categories">
+        <NavLink to="/categories" className={({isActive}) => isActive ? styles.SideBar__Link__Active : undefined}>
           <li>Categories</li>
         </NavLink>
-        <NavLink to="/saved">
+        <NavLink to="/saved" className={({isActive}) => isActive ? styles.SideBar__Link__Active : undefined}>
           <li>Saved</li>
         </NavLink>
       </ul>

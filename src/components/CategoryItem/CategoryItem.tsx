@@ -3,7 +3,7 @@ import styles from "./CategoryItem.module.css";
 
 function CategoryItem({ id, name, thumb }: { id: string; name: string; thumb: string }) {
   return (
-    <Link to={`/c/${name}`}>
+    <Link to={`/categories/${name}`}>
       <div className={styles.CategoryItem} key={id}>
         <div className={styles.CategoryItem__Img}>
           <img src={thumb} alt={name} />
